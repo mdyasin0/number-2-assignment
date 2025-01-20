@@ -9,3 +9,78 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
+nav{
+    display: flex;
+    max-width: 1000px;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 10px;
+}
+.nav-1{
+    display: flex;
+    align-items: center;  
+}
+.nav-1 h1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.nav-2{
+    display: flex;
+    gap: 1.4rem;  
+}
+.nav-2 li {
+    list-style: none;
+}
+.li-1{
+    color:orange ;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.li-2{
+    color:skyblue ;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.li-3{
+    color:tomato ;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.li-4{
+    color: rgba(93, 88, 239, 1);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.nav-2 li a {
+    text-decoration: none;
+}
+.nav-btn{
+ padding: 8px 35px 8px 35px;
+ border: none;
+ background-color:orange ;
+ border-radius: 8px;
+ color: white;
+ font-size: 1.4rem;
+ font-weight: 400px;
+}
+.hamburger-icon{
+    display: none;
+    font-size: 2rem;
+
+}
+/* nav bar compleate*/
+/* responsive style of navbar for mobile */
+@media screen and (max-width:576px) {
+    nav{
+        border-bottom: 2px solid orange;
+        padding-bottom: 5px;
+    }
+    .display,.nav-2 ,.nav-btn{
+        display: none;
+    }
+    .hamburger-icon{
+        display:block;
+    }
+}
+
