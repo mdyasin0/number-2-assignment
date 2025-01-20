@@ -111,8 +111,9 @@ nav{
 /* standard section  */
 .standard-background{
  background-image:url('assets/bg.png');
- width: 100%;
+ background-repeat: no-repeat; 
  background-size: cover;
+ background-position: center;
  margin-top: 50px;
 }
 .standard{
@@ -204,6 +205,142 @@ nav{
 }
 /* standard section compleate */
 
+/* our story */
+.our-story{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom:40px ;
+    
+}
+.our-story-background{
+   background-image: url(assets/bg.png);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+    margin-top: 40px;
+    background-image: linear-gradient(to bottom,white , #ecdaba );
+    margin-bottom: 50px;
+}
+.our-story h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+  
+}
+.our-story-all-cards{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.our-story-large-card{
+    max-width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width:500px ;
+
+}
+
+.our-story-large-card img{
+    max-width: 100%;
+    border-radius: 10px 10px 0 0  ;
+
+
+}
+
+.our-story-large-card button{
+    font-size: 1rem;
+    font-weight: 500px;
+    background-color:rgba(60, 216, 232, 1) ;
+    padding: 8px 15px 8px 15px;
+    border-radius:20px ;
+    border: none;
+    max-width: 180px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: -20px;
+    
+}
+.our-story-large-card h6{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left:10px ;
+}
+.our-story-large-card p{
+    font-size: 0.9rem;
+    font-weight: 400px;
+    margin-bottom: 30px;
+    padding-left:10px ;
+}
+.our-story-small-all-cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+.our-story-small-card{
+    background-color: white;
+    border-radius: 10px;
+    max-width: 200px;
+   display: flex;
+   flex-direction: column;
+   min-height:250px ;
+
+
+}
+
+.our-story-small-card img{
+    max-width: 100%;
+    border-radius: 10px 10px 0 0 ;
+}
+.our-story-small-card button{
+   
+    color: white;
+    padding:3px 6px 5px 8px ;
+    border-radius:20px ;
+    border: none;
+    max-width: 140px;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+.our-story-btn1{
+    background-color:tomato ;
+}
+.our-story-btn2{
+    background-color: rgb(235, 135, 197) ;
+}
+.our-story-btn3{
+    background-color: greenyellow ;
+}
+.our-story-btn4{
+    background-color: rgb(47, 196, 255) ;
+}
+.our-story-small-card h6{
+   font-weight: bold;
+   font-size: 1rem;
+   margin-top: 30px;
+   padding-left: 10px;
+}
+.vew-all{
+   display: flex;
+   justify-content: center;
+
+
+}
+
+.vew-all button{
+    padding: 7px 30px 7px 30px;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+   margin-top: 40px;
+}
+/* our story section compleate */
 
 @media screen and (max-width:576px) {
    /* responsive style of navbar for mobile */ 
@@ -243,5 +380,23 @@ nav{
     .arrow{
         display: none;
     }
+     /* responsive style of standard section for mobile */
+     .our-story-all-cards{
+        flex-direction: column;
+     }
+     .our-story-background{
+        min-width: 100%;
+     }
+     .our-story-large-card{
+        display: none;
+     }
+     
+     
+     .our-story-small-all-cards{
+        grid-template-columns: repeat(2,1fr);
+        max-width: 90%;
+        margin: 0 auto;
+        
+     }
 }
 
