@@ -219,7 +219,7 @@ nav{
     background-position: center;
     margin-top: 40px;
     background-image: linear-gradient(to bottom,white , #ecdaba );
-    margin-bottom: 50px;
+   
 }
 .our-story h1{
     font-size: 2.5rem;
@@ -303,7 +303,7 @@ nav{
     border-radius:20px ;
     border: none;
     max-width: 140px;
-    margin-left: 20px;
+    margin-left: 1.4rem;
     margin-top: -10px;
 }
 .our-story-btn1{
@@ -342,8 +342,61 @@ nav{
 }
 /* our story section compleate */
 
+
+/* footer */
+footer{
+    background-color:rgb(1, 89, 253) ;
+    color: white;
+  
+}
+.footer-width{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding:40px ;
+    gap: 40px;
+}
+.footer1 h4{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.footer1{
+    max-width:500px ;
+}
+
+    .footer1-logo{
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+.footer2 h6{
+    font-size:1.5rem ;
+    font-weight: bold;
+}
+.footer2 li{
+  list-style: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-top: 10px;
+ 
+
+}
+.footer3 h6{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.footer-icon{
+    display: flex;
+    gap: 10px;
+    margin-top:20px ;
+  
+}
+
 @media screen and (max-width:576px) {
    /* responsive style of navbar for mobile */ 
+  
     nav{
         border-bottom: 2px solid orange;
         padding-bottom: 5px;
@@ -397,6 +450,24 @@ nav{
         max-width: 90%;
         margin: 0 auto;
         
+     }
+     /* footer */
+     .footer-width{
+        flex-direction: column;
+       
+       
+     }
+     .footer{
+        width: 100%;
+     }
+     .footer1{
+        margin-top:20px ;
+     }
+     .footer2{
+        margin-top:20px ;
+     }
+     .arrow-3{
+        margin-top:20px ;
      }
 }
 
