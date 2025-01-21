@@ -189,6 +189,19 @@ nav{
     box-shadow:  -1px  1px  2px grey;
     
 }
+.standard-card-2-link a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: orange;
+}
+
+.standard-card-3-link a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color:rgba(135, 0, 255, 1) ;
+}
 .standard-card-3{
     max-width:300px ;
     min-height: 400px;
