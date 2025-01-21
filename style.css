@@ -72,6 +72,43 @@ nav{
 /* nav bar compleate*/
 
 
+
+
+/*Marquee animation  */
+.text-animation{
+    background-color:#FFD65A ;
+    max-width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow:1px 3px 1px 3px rgb(233, 232, 232) ;
+    border-top:2px solid tomato ;
+    border-bottom:2px solid rgb(139, 6, 201) ;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  
+  }
+  .animation-text{
+      display: inline-block;
+     font-size: 1.5rem;
+     font-weight: bold;
+     color: rgb(41, 38, 38);
+     animation: tickerMove 10s linear infinite;
+     white-space: nowrap;
+     padding-left: 100%;
+  }
+  
+  @keyframes tickerMove {
+      0% {
+          transform: translateX(0);
+      }
+      100%{
+          transform: translateX(-100%);
+      }
+  }
+  
+
+
 /*Empowering section */
 .Empowering{
     max-width: 1000px;
